@@ -1,0 +1,39 @@
+.content-header {
+  padding-top: 32px;
+  margin-bottom: 24px;
+  position: relative;
+
+  &--modal {
+    padding-top: 0;
+
+    @media (min-width: $screen-lg) {
+      padding-top: 32px;
+    }
+  }
+
+  &__inner {
+  display: flex;
+  height: 40px;
+  }
+
+  &__title {
+  font-family: 'TT Lakes Bold';
+  letter-spacing: -0.6px;
+  flex-grow: 1;
+  }
+
+  &::before {
+    content: "";
+    width: 4px;
+    height: 40px;
+    position: absolute;
+    background: url("../img/highlight.svg") no-repeat;
+
+  }
+
+}
+
+
+
+
+

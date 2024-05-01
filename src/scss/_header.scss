@@ -1,0 +1,17 @@
+.header {
+  border-top: 1px solid rgba(217, 255, 245, 1);
+  line-height: 22px;
+  background: linear-gradient(to right, #F8F8F8, #FFFFFF);
+  padding: 16px;
+  height: 80px;
+
+  @media (min-width: $screen-md) {
+    height: 56px;
+  }
+}
+
+.header__title {
+  font: 16px 'TT Lakes Medium';
+  text-transform: uppercase;
+  color: rgba(126, 126, 130, 1);
+}

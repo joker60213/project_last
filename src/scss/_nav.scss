@@ -1,0 +1,62 @@
+.nav {
+    display: flex;
+    align-items: center;
+    margin: 24px 0 0 16px;
+    overflow: auto;
+    scrollbar-width: none;
+
+    @media (min-width: $screen-md) {
+      margin: 24px 0 0 24px;
+    }
+
+    @media (min-width: $screen-lg) {
+      margin: 24px 0 0 32px;
+      flex-flow: wrap;
+    }
+
+    &::-webkit-scrollbar {
+        width: 0;
+    }
+
+    &__item {
+        padding: 8px 16.5px;
+        margin-bottom: 12px;
+        white-space: nowrap;
+        text-decoration: none;
+        font: 16px 'TT Lakes Medium';
+        color: $gray;
+        border-radius: 6px;
+        letter-spacing: -0.2px;
+        transition: color 0.3s;
+
+        &:focus,
+        &:hover {
+            color: #b3b3b3;
+            transition: 0.3s;
+        }
+
+        &--active {
+            border: 2px solid $green-focus;
+            background: $white;
+
+            &:hover,
+            &:focus {
+                border: 2px solid $green-focus;
+                background: $white;
+                color: $gray;
+            }
+
+        }
+
+    }
+
+}
+
+
+
+
+
+
+
+
+

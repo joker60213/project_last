@@ -1,0 +1,86 @@
+.modal {
+  transform: translateY(-102%);
+  flex-direction: column;
+  position: absolute;
+  min-height: 100%;
+  height: auto;
+  z-index: 2;
+  width: 100%;
+  min-width: 320px;
+  max-width: 360px;
+  background: #FFFFFF;
+
+  @media (min-width: $screen-md) {
+    max-width: 320px;
+
+  }
+
+  @media (min-width: $screen-lg) {
+    min-width: 306px;
+    max-width: 306px;
+  }
+
+  &__body {
+      max-height: 500px;
+
+    @media (min-width: $screen-md) {
+      flex: 1;
+    }
+  }
+
+  &__footer {
+    display: flex;
+    flex-flow: column;
+
+    & .btn-group {
+      margin-bottom: 16px;
+    }
+  }
+
+
+  &--left {
+    left: 0;
+    box-shadow:  16px 0 20px -2px  rgba(14, 24, 80, 0.2);
+
+    @media (min-width: $screen-lg) {
+      transform: translateY(0);
+      display: flex;
+      max-width: 320px;
+      position: static;
+      z-index: inherit;
+      height: auto;
+      box-shadow: none;
+    }
+  }
+
+  &--right {
+    right: 0;
+    box-shadow:  -16px 0 20px -2px  rgba(14, 24, 80, 0.2);
+    max-width: 440px;
+
+    .btn--close {
+        position: absolute;
+        top: 24px;
+        left: 16px;
+
+      @media (min-width: $screen-lg) {
+        max-width: 440px;
+        top: 32px;
+        left: -60px;
+      }
+    }
+
+    .btn--send-form {
+      float: right;
+    }
+
+    & .note {
+      margin-bottom: 18px;
+    }
+  }
+
+  &--show-modal {
+    transform: translateY(0);
+  }
+}
+

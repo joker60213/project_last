@@ -1,0 +1,56 @@
+.page-header {
+  background: $white; 
+  
+  &--hidden-lg {
+    @media (min-width: $screen-lg) {        
+    display: none;  
+    }   
+  }  
+
+  &__inner {
+  background: $white;     
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 88px;  
+  }
+
+  & .btn-group:first-of-type {    
+    flex: 1;     
+  }
+
+  & .btn-group:nth-of-type(2) {
+    width: 152px;
+  }
+
+  & .btn-group:last-of-type {
+    width: 138px;
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

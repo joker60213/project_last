@@ -1,0 +1,61 @@
+.container {
+  padding: 0 16px;
+
+
+  @media (min-width: $screen-md) {
+    padding: 0 24px;
+  }
+
+  @media (min-width: $screen-lg) {
+    padding: 0 32px;
+  }
+
+}
+
+.price-list__description {
+  width: 302px;
+  margin: 0 16px;
+
+  @media (min-width: $screen-md) {
+    width: 421px;
+    margin: 10px 24px;
+  }
+}
+
+.description {
+  &__btn {
+    width: 198px;
+    margin-top: 16px;
+
+    @media (min-width: $screen-md) {
+      width: 302px;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      width: 8px;
+      height: 16px;
+      margin-left: 10px;
+      background: url(../img/commercial-offer.svg) no-repeat center / 100% 100%;
+
+    }
+  }
+}
+
+.site-wrapper {
+  display: flex;
+  margin: 0 auto;
+  position: relative;
+  max-width: $screen-xl;
+}
+
+.blur {
+  filter: blur(10px);
+  height:100vh;
+  overflow: hidden;
+}
+
+
+
+

@@ -1,0 +1,195 @@
+.slider {
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+  background-color: #f8f8f8;
+  padding: 0 0 16px 16px;
+
+  @media (min-width: $screen-md) {
+    padding: 0 0 14px 20px;
+  }
+
+  @media (min-width: $screen-lg) {
+    padding: 0 0 14px 32px;
+  }
+
+  @media (min-width: $screen-xl) {
+    padding: 0 0 14px 18px;
+  }
+
+  &__container {
+    background: #f8f8f8;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-flow: nowrap;
+    min-width: 0;
+    margin-bottom: 16px;
+
+    @media (min-width: $screen-md) {
+      flex-flow: wrap;
+      max-height: 160px;
+      overflow: hidden;
+    }
+
+    &--price {
+      @media (min-width: $screen-md) {
+        max-height: 100%;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 240px;
+    height: 72px;
+    background-color: $white;
+    padding: 16px;
+    margin-right: 16px;
+
+    @media (min-width: $screen-md) {
+      width: 224px;
+      margin-right: 24px;
+      margin-bottom: 16px;
+    }
+
+    @media (min-width: $screen-lg) {
+      width: 240px;
+      margin-right: 31px;
+    }
+
+    &--device {
+      height: 160px;
+    }
+
+    &--price {
+      position: relative;
+      width: 260px;
+      height: 200px;
+      display: flex;
+      flex-flow: wrap;
+
+      @media (min-width: $screen-md) {
+        flex-flow: nowrap;
+        flex: 100%;
+        justify-content: space-around;
+        height: 56px;
+        margin-bottom: 0;
+        margin-right: 20px;
+      }
+
+      &:not(:last-of-type)::after {
+        content: "";
+        position: absolute;
+        height: 1px;
+        width: calc(100% - 36px);
+        bottom: 0;
+        background-color: #eaeaea;
+      }
+    }
+
+    .btn--device {
+      align-self: flex-end;
+    }
+
+    &--hidden-sm {
+      display: none;
+
+      @media (min-width: $screen-md) {
+        width: auto;
+        display: flex;
+        margin-bottom: 0;
+        background-color: inherit;
+      }
+    }
+  }
+
+  &__subitem {
+    margin-right: 16px;
+    align-self: center;
+
+    @media (min-width: $screen-md) {
+      white-space: nowrap;
+      min-width: 80px;
+    }
+
+    &:not(:last-of-type) {
+      flex: 100%;
+
+      @media (min-width: $screen-md) {
+        flex: auto;
+      }
+    }
+
+    &:first-of-type {
+      @media (min-width: $screen-md) {
+        flex: auto;
+        min-width: 55%;
+      }
+    }
+  }
+
+  &__subitem-title {
+    font: 14px "TT Lakes Medium";
+    color: rgb(189, 189, 189);
+    margin-bottom: 4px;
+
+    &--hidden-sm {
+      @media (min-width: $screen-md) {
+        display: none;
+      }
+    }
+  }
+
+  &__brands-logo {
+    object-fit: none;
+  }
+
+  &__pagination {
+    position: static;
+
+    @media (min-width: $screen-md) {
+      display: none;
+    }
+
+    .swiper-pagination-bullet {
+      width: 12px;
+      height: 12px;
+      background: #dddddd;
+      opacity: 1;
+    }
+
+    .swiper-pagination-bullet-active {
+      background: #b5b6bc;
+    }
+  }
+
+  .btn--order {
+    flex: 119px;
+    min-width: 119px;
+    align-self: flex-end;
+    max-width: 121px;
+    width: 100px;
+    height: 32px;
+
+    @media (min-width: $screen-md) {
+      align-self: center;
+    }
+
+    @media (min-width: $screen-lg) {
+      max-width: 128px;
+    }
+  }
+
+  .btn--hidden-always {
+    visibility: hidden;
+  }
+}
+
+.show {
+  max-height: 100%;
+}

@@ -1,0 +1,29 @@
+@import "variables";
+@import 'reset';
+@import 'fonts';
+@import 'container';
+@import 'page';
+@import 'btn';
+@import 'btn-group';
+@import 'page-header';
+@import 'content-header';
+@import 'nav';
+@import 'about';
+@import "header";
+@import 'slider';
+@import 'link';
+@import 'choose-language';
+@import 'input';
+@import 'nav-vertical';
+@import 'note';
+@import 'page-footer';
+@import 'modal';
+@import '../../node_modules/swiper/swiper-bundle.css';
+
+body {
+  background-color: $white-dark;
+  font: $font-size $font-family;
+}
+
+
+
